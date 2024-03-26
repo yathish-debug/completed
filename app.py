@@ -144,12 +144,12 @@ def main():
     col1, col2 = st.columns((3, 1))
     with col1:
         st.title("Research Assistant📚")
-        st.write("This is column 1")
-        st.write("Concatenated Text:")
+        #st.write("This is column 1")
+        #st.write("Concatenated Text:")
 
     with col2:
         st.title("Themes and Codes⚙️")        
-        st.write("This is column 2")
+        #st.write("This is column 2")
         
     # Display file uploader in the sidebar
     with st.sidebar:
