@@ -10,4 +10,4 @@ transformers
 sentence_transformers
 InstructorEmbedding
 tiktoken
-os
+os==0.1
