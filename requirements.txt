@@ -1,3 +1,4 @@
+os
 streamlit
 PyPDF2
 langchain
@@ -10,4 +11,3 @@ transformers
 sentence_transformers
 InstructorEmbedding
 tiktoken
-os
