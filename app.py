@@ -11,7 +11,10 @@ from htmlTemplates import *  # Import HTML templates
 from openai import OpenAI
 import openai
 from langchain.llms import OpenAI
-os.environ["OPENAI_API_KEY"] = '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'
+header = {
+    "authorization" : st.secrets["OPENAI_API_KEY"],
+    "content-type" : "application/json"
+}
 # Function to extract text from PDF documents
 def get_pdf_text(pdf_docs):
     text = ""
