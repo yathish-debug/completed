@@ -129,9 +129,7 @@ def print_themes_codes(pdf_docs):
         st.subheader(f"File : {item}", divider='rainbow')
         st.write(value)
 
-def submit():
-    st.session_state.my_text = st.session_state.widget
-    st.session_state.widget = ""
+
 
 
 def main():
@@ -182,6 +180,9 @@ def main():
             st.session_state.conversation0 = None
         if "user_question" not in st.session_state:
             st.session_state.user_question = ""
+        def submit():
+            st.session_state.my_text = st.session_state.widget
+            st.session_state.widget = ""
         if pdf_docs:
             user_question = st.text_input("Ask a question:", key="widget", on_change=submit)
             user_question = st.session_state.user_question
